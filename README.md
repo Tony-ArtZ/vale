@@ -2,7 +2,7 @@
 
 _An intelligent, interactive AI companion that brings conversations to life_
 
-# [Example Video](https://www.linkedin.com/posts/adarsh-upadhyay-8b8a55232_just-trying-out-some-tests-for-an-interrupt-activity-7357392954577080321-SFyl?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADotE8wBGedysvqK5BSTRYSkvULS14SZtVE)
+# [Example Video](https://drive.google.com/file/d/1Z1Blsj1IJK8tr_2CEt0MTcl_emuFZ8XD/view?usp=drivesdk)
 
 ## 🌟 Introduction
 
@@ -15,8 +15,6 @@ Vale AI is a next-generation AI assistant platform that bridges the gap between 
 **⚡ Real-Time Interaction**: Powered by WebSocket technology, every interaction is instantaneous. Vale can be interrupted mid-sentence, respond to real-time events, and maintain continuous conversation flow without delays. The interrupt system also enables Vale to proactively initiate conversations, making her feel like a true companion rather than a passive assistant.
 
 **🧠 Context-Aware Intelligence**: With vector embeddings and conversation summarization, Vale remembers and learns from every interaction, building a rich understanding of user preferences and conversation history.
-
-**🎵 Lifestyle Integration**: Deep Spotify integration allows Vale to control your music, understand your taste, and even recommend songs based on your mood and conversation context.
 
 **🔌 Extensible Platform**: Built on the Model Context Protocol (MCP), Vale can be extended with new capabilities, integrations, and tools without changing the core architecture.
 
@@ -82,14 +80,6 @@ Vale's interrupt-driven architecture enables:
 - **Vector Embeddings**: Semantic search capabilities and intelligent conversation summarization
 - **MCP Support**: Model Context Protocol for unlimited extensibility and plugin architecture
 - **Multi-Modal Processing**: Text, voice, and visual input understanding
-
-### 🔌 Integrations & Services
-
-- **Spotify Integration**: Complete music ecosystem control including playback, discovery, and mood-based recommendations
-- **Weather Services**: Real-time weather data and forecasting with location awareness
-- **User Preferences**: Persistent, intelligent preference learning and application
-- **Calendar & Scheduling**: Smart calendar integration with natural language planning
-- **Smart Home Control**: IoT device integration for ambient environment control
 
 ### ⚡ Real-time Features
 
