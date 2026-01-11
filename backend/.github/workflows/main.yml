@@ -1,0 +1,32 @@
+name: Deploy to DigitalOcean
+
+on:
+  push:
+    branches:
+      - main  # Change this to match your main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install sshpass
+        run: sudo apt-get install -y sshpass
+
+      - name: Transfer .env file to server
+        run: |
+          echo "${{ secrets.DOT_ENV }}" > .env
+          sshpass -p "${{ secrets.SSH_PASSWORD }}" scp -o StrictHostKeyChecking=no .env ${{ secrets.SSH_USER }}@${{ secrets.DROPLET_IP }}:veronica-ai/.env
+          rm .env  # Remove local copy for security
+
+      - name: Deploy application
+        run: |
+          sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.DROPLET_IP }} << 'EOF'
+            cd veronica-ai
+            git pull origin main  # Fetch latest changes
+            docker compose down
+            docker compose up --build -d
+          EOF

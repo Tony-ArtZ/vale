@@ -1,0 +1,26 @@
+{
+  "name": "veronica-ai",
+  "module": "index.ts",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.8.2"
+  },
+  "private": true,
+  "scripts": {
+    "db:generate": "cd packages/shared-db && bun drizzle-kit generate",
+    "db:push": "cd packages/shared-db && bun drizzle-kit push",
+    "server": "bun install && bun run db:generate && cd packages/server && bun run index.ts",
+    "embeder": "bun install && cd packages/embed-worker && bun run index.ts",
+    "ws-server": "bun install && cd packages/ws-server && bun run index.ts"
+  },
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "@ai-sdk/google": "^1.2.18",
+    "@ai-sdk/openai": "^1.3.22"
+  }
+}

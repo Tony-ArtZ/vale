@@ -1,0 +1,17 @@
+{
+  "name": "ws-server",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "jsonwebtoken": "^9.0.2",
+    "redis": "^4.7.0"
+  }
+}

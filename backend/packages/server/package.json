@@ -1,0 +1,37 @@
+{
+  "name": "veronica-server",
+  "module": "index.ts",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/bun": "latest",
+    "@types/cookie-parser": "^1.4.8",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.9",
+    "drizzle-kit": "^0.30.5",
+    "tsx": "^4.19.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@ai-sdk/cerebras": "^0.2.14",
+    "@ai-sdk/google": "^3.0.6",
+    "@ai-sdk/mcp": "^1.0.5",
+    "@ai-sdk/openai": "^3.0.7",
+    "@neondatabase/serverless": "^0.10.4",
+    "ai": "^6.0.27",
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.40.0",
+    "express": "^4.21.2",
+    "http-errors": "^2.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "redis": "^4.7.0",
+    "zod": "^4.3.5"
+  }
+}
